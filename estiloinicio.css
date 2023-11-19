@@ -7,4 +7,9 @@ body{
 
      color: aliceblue; /*Color sirve para cambiar el color de la fuente*/
 
+     background-image: url(https://i.blogs.es/50c5c1/netflix-catalogo/840_560.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     /*Poner una imagen de fondo que no se repita y que no quede espacio*/
+
 }
