@@ -25,6 +25,7 @@ form#loginForm{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20%;
 }
 
 /*Estilo del cuadro de iniciar sesion*/
@@ -34,5 +35,7 @@ div.contenedor{
     background-color: rgba(255, 0, 0, 0.457); /*Color de fondo del cuadro*/
     width: 300px; /*Anchura del cuadro*/
     height: 300px; /*Altura del cuadro*/
+
+    border-radius: 20px; /*Marco redondo*/
 
 }
