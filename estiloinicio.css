@@ -1,3 +1,4 @@
+/*Configurar el fondo de la pagina*/
 body{
      /* 
      La siguiente linea se utiliza para dar un color de fondo 
@@ -12,4 +13,15 @@ body{
      background-size: cover;
      /*Poner una imagen de fondo que no se repita y que no quede espacio*/
 
+}
+/*Configurar el cuadro de usuario y contraseña*/
+*{
+    display: flex;
+    flex-direction: column;
+}
+
+form#loginForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
