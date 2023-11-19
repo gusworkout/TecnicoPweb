@@ -39,3 +39,13 @@ div.contenedor{
     border-radius: 20px; /*Marco redondo*/
 
 }
+
+/*Diseño a los label e input*/
+button{
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 20%;
+    padding: 10px;
+    border: 0px;
+}
