@@ -32,5 +32,7 @@ div.contenedor{
     margin-top: 15%;
     margin-left: 40%;
     background-color: rgba(255, 0, 0, 0.457); /*Color de fondo del cuadro*/
-    width: 300px;
+    width: 300px; /*Anchura del cuadro*/
+    height: 500px; /*Altura del cuadro*/
+
 }
