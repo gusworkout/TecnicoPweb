@@ -1,58 +1,58 @@
 /*Configurar el fondo de la pagina*/
 body{
-     /* 
-     La siguiente linea se utiliza para dar un color de fondo 
-     se tiene que modificar el color escribiendolo en ingles
-     */
-     background-color: black;
+    /* 
+    La siguiente linea se utiliza para dar un color de fondo 
+    se tiene que modificar el color escribiendolo en ingles
+    */
+    background-color: black;
 
-     color: aliceblue; /*Color sirve para cambiar el color de la fuente*/
-     font-family: Arial; /*Tipo de letra*/
+    color: aliceblue; /*Color sirve para cambiar el color de la fuente*/
+    font-family: Arial; /*Tipo de letra*/
 
-     background-image: url(https://i.blogs.es/50c5c1/netflix-catalogo/840_560.jpeg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     /*Poner una imagen de fondo que no se repita y que no quede espacio*/
+    background-image: url(https://i.blogs.es/50c5c1/netflix-catalogo/840_560.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Poner una imagen de fondo que no se repita y que no quede espacio*/
 
 }
 /*Configurar el cuadro de usuario y contraseña*/
 *{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
 form#loginForm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 20%;
 }
 
 /*Estilo del cuadro de iniciar sesion*/
 div.contenedor{
-    margin-top: 15%;
-    margin-left: 40%;
-    background-color: rgba(255, 0, 0, 0.457); /*Color de fondo del cuadro*/
-    width: 300px; /*Anchura del cuadro*/
-    height: 300px; /*Altura del cuadro*/
+   margin-top: 15%;
+   margin-left: 40%;
+   background-color: rgba(255, 0, 0, 0.457); /*Color de fondo del cuadro*/
+   width: 300px; /*Anchura del cuadro*/
+   height: 300px; /*Altura del cuadro*/
 
-    border-radius: 20px; /*Marco redondo*/
+   border-radius: 20px; /*Marco redondo*/
 
 }
 
 /*Diseño a los label e input*/
 button{
-    background-color: brown;
-    color: aliceblue;
-    border-radius: 5px;
-    margin: 20%;
-    padding: 10px;
-    border: 0px;
+   background-color: brown;
+   color: aliceblue;
+   border-radius: 5px;
+   margin: 20%;
+   padding: 10px;
+   border: 0px;
 }
 
 input{
-    color: black;
-    background-color: rgba(255, 0, 0, 0.403);
-    border-radius: 10px;
-    margin: 10px;
+   color: black;
+   background-color: rgba(255, 0, 0, 0.403);
+   border-radius: 10px;
+   margin: 10px;
 }
