@@ -33,7 +33,22 @@ function App() {
         </p>
         <MyInfo/>
       </div>
-
+      <div className="experience">
+        <p>Mi camino</p>
+        <ul>
+          <li>Pagina de institucion</li>
+          <li>Desarrollador web frontend</li>
+          <li>Ingeniero de sistemas</li>
+        </ul>
+      </div>
+      <div className="endPart">
+        <ul>
+          <li>Contactame</li>
+          <li>Mis redes</li>
+          <li>........</li>
+        </ul>
+        <p>copy</p>
+      </div>
     </div>
   )
 }
