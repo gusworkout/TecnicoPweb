@@ -1,30 +1,34 @@
-import { useState } from 'react'
 import MyInfo from './components/contactInfo'
-
+import './AppCss.css'
 
 function App() {
 
 
   return (
-    <div>
+    <div className='container'>
       <header>
         <div className="menuBar">
           <div className="miLogo">
-          <img className="logoSvg" src="#" alt="Logo" />
+          <img className="logoSvg" src="#" alt=" Gustavo Web" />
+          
+          
           </div>
           <ul>
-            <li>Titulo</li>
-            <li>Proyectos</li>
-            <li>Cursos</li>
+            <li><a href="#">Quien soy</a></li>
+            <li><a href="#">Trayectoria</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </div>
       </header>
       <div className="myTitle">
-        <h1>Gustavo Alberto Ochoa Diaz</h1>
+        <div className="nameAndSpec">
+          <h1>Gustavo Alberto Ochoa Diaz</h1>
         <h2>Programador Frontend</h2>
+        </div>
+        
+        <img src="#" alt="#" />
       </div>
       <div className='aboutMe'>
-        <div className='MyProfilePhoto'><img src="#" alt="#" /></div>
         <p className="aboutMeText">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Fugiat ab temporibus facilis consequatur omnis consequuntur, 
@@ -34,11 +38,27 @@ function App() {
         <MyInfo/>
       </div>
       <div className="experience">
-        <p>Mi camino</p>
-        <ul>
-          <li>Pagina de institucion</li>
-          <li>Desarrollador web frontend</li>
-          <li>Ingeniero de sistemas</li>
+        <ul className='xp'>
+          <li className='nameXp'>Pagina de institucion</li>
+          <li className='description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Sapiente aliquam quos iusto distinctio? Dicta debitis eveniet vero nihil nemo, totam aliquam magnam 
+            suscipit exercitationem autem at consequatur veritatis est itaque.
+            </li>
+        </ul>
+        <ul className='xp'>
+          <li className='nameXp'>Pagina de institucion</li>
+          <li className='description'>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Sapiente aliquam quos iusto distinctio? Dicta debitis eveniet vero nihil nemo, totam aliquam magnam 
+            suscipit exercitationem autem at consequatur veritatis est itaque.
+          </li>
+        </ul>
+        <ul className='xp'>
+          <li className='nameXp'>Pagina de institucion</li>
+          <li className='description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Sapiente aliquam quos iusto distinctio? Dicta debitis eveniet vero nihil nemo, totam aliquam magnam 
+            suscipit exercitationem autem at consequatur veritatis est itaque.
+            </li>
         </ul>
       </div>
       <div className="endPart">
@@ -47,7 +67,7 @@ function App() {
           <li>Mis redes</li>
           <li>........</li>
         </ul>
-        <p>copy</p>
+        <p>© Todos los derechos reservados | 2025</p>
       </div>
     </div>
   )

@@ -3,7 +3,7 @@ const MyInfo = () => {
     const tel = "3059230920"
     const GitHub = "gusworkout"
     return(
-        <div>
+        <div className="contact">
             <p>Email: {email}</p>
             <p>GitHub: {GitHub}</p>
         </div>
