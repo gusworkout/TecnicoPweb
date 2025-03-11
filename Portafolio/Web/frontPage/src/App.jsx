@@ -1,5 +1,7 @@
 import MyInfo from './components/contactInfo'
 import './AppCss.css'
+import "@fontsource/yeseva-one";
+import "@fontsource/bungee";
 
 function App() {
 
@@ -9,57 +11,84 @@ function App() {
       <header>
         <div className="menuBar">
           <div className="miLogo">
-          <img className="logoSvg" src="#" alt=" Gustavo Web" />
-          
-          
+            <img className="logoSvg" src="#" alt=" Gustavo Web" />
+
+
           </div>
           <ul>
-            <li><a href="#">Quien soy</a></li>
+            <li><a href="#">Sobre mi</a></li>
             <li><a href="#">Trayectoria</a></li>
             <li><a href="#">Contacto</a></li>
+            <li><a href="#">Oscuro</a></li>
           </ul>
         </div>
       </header>
       <div className="myTitle">
         <div className="nameAndSpec">
-          <h1>Gustavo Alberto Ochoa Diaz</h1>
-        <h2>Programador Frontend</h2>
+          <h1>Gustavo Ochoa</h1>
+          <h2>Frontend Developer</h2>
         </div>
-        
+
         <img src="#" alt="#" />
       </div>
       <div className='aboutMe'>
-        <p className="aboutMeText">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          Fugiat ab temporibus facilis consequatur omnis consequuntur, 
-          cum neque inventore laudantium a, architecto,
-           vitae optio recusandae! Eos aut quae aliquam dicta ad!
-        </p>
-        <MyInfo/>
+        <div className="Me1">
+          <p className="aboutMeText">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Fugiat ab temporibus facilis consequatur omnis consequuntur,
+            cum neque inventore laudantium a, architecto,
+            vitae optio recusandae! Eos aut quae aliquam dicta ad!
+          </p>
+        </div>
+        <div className="Me2">
+          <MyInfo />
+        </div>
+        <div className="Me3">
+          <img src="#" alt="#" />
+        </div>
+
+
       </div>
       <div className="experience">
-        <ul className='xp'>
-          <li className='nameXp'>Pagina de institucion</li>
-          <li className='description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Sapiente aliquam quos iusto distinctio? Dicta debitis eveniet vero nihil nemo, totam aliquam magnam 
-            suscipit exercitationem autem at consequatur veritatis est itaque.
-            </li>
-        </ul>
-        <ul className='xp'>
-          <li className='nameXp'>Pagina de institucion</li>
-          <li className='description'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Sapiente aliquam quos iusto distinctio? Dicta debitis eveniet vero nihil nemo, totam aliquam magnam 
-            suscipit exercitationem autem at consequatur veritatis est itaque.
-          </li>
-        </ul>
-        <ul className='xp'>
-          <li className='nameXp'>Pagina de institucion</li>
-          <li className='description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Sapiente aliquam quos iusto distinctio? Dicta debitis eveniet vero nihil nemo, totam aliquam magnam 
-            suscipit exercitationem autem at consequatur veritatis est itaque.
-            </li>
-        </ul>
+        <div className="experienceName1">
+          <p>Titulo 1</p>
+        </div>
+        <div className="experienceData1">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quis vitae debitis illum laboriosam, sint dicta laudantium eum a neque adipisci incidunt,
+            odio consequuntur consectetur similique placeat maxime repudiandae et culpa.
+          </p>
+        </div>
+        <div className="experienceImg1">
+          <img src="#" alt="#" />
+        </div>
+        <div className="experienceName2">
+          <p>Titulo 2</p>
+        </div>
+        <div className="experienceData2">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quis vitae debitis illum laboriosam, sint dicta laudantium eum a neque adipisci incidunt,
+            odio consequuntur consectetur similique placeat maxime repudiandae et culpa.
+          </p>
+        </div>
+        <div className="experienceImg2">
+          <img src="#" alt="#" />
+        </div>
+        <div className="experienceName3">
+          <p>Titulo 2</p>
+        </div>
+        <div className="experienceData3">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quis vitae debitis illum laboriosam, sint dicta laudantium eum a neque adipisci incidunt,
+            odio consequuntur consectetur similique placeat maxime repudiandae et culpa.
+          </p>
+        </div>
+        <div className="experienceImg3">
+          <img src="#" alt="#" />
+        </div>
       </div>
       <div className="endPart">
         <ul>

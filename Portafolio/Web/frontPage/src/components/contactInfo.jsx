@@ -4,8 +4,8 @@ const MyInfo = () => {
     const GitHub = "gusworkout"
     return(
         <div className="contact">
-            <p>Email: {email}</p>
-            <p>GitHub: {GitHub}</p>
+            <p>Linkendin: <a href="">{email}</a> </p>
+            <p>GitHub: <a href="">{GitHub}</a></p>
         </div>
     )
 }

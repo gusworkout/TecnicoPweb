@@ -1,15 +1,20 @@
-
-
-body{
-    display: flex;
-    flex-direction: column;
+*{
     margin: 0;
     padding: 0;
-    height: 100vh;
     box-sizing: border-box;
 }
 
-#root{
+body {
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    
+    font-family: Arial, sans-serif;
+    background-color: rgba(31, 29, 29, 0.692); 
+}
+
+#root {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,7 +22,7 @@ body{
     padding: 0;
 }
 
-.container{
+.container {
     height: 100%;
 }
 
@@ -26,11 +31,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    background-color: sRGB(0, 0, 0, 7);
     max-width: 100%;
     overflow: hidden;
     flex-wrap: wrap;
-    
+
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -44,28 +51,38 @@ header {
 }
 
 .miLogo {
+    color: white;
     width: 40%;
     display: flex;
     justify-content: flex-start;
 }
 
 .menuBar ul {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    gap: 25%;
+    gap: 10%;
+    
+}
+
+.menuBar a{
+    color: #00ffff;;
+    text-decoration: none;
 }
 
 .myTitle {
     width: 100%;
-    background-color: rgb(40, 107, 107);
+    background-color: #0d0d0d;
+    border-bottom: 4px solid #00ffff;
+    border-top: 4px solid #00ffff;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 50%;
-
+    margin-top: 50px;
 }
 
 
@@ -84,29 +101,71 @@ header {
     object-fit: contain;
 }
 
-.myTitle h2, h1 {
+.myTitle h1 {
     font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-family: 'Bungee';
+    font-size: 48px;
+    margin: 5px;
+    color: #00ffff;
+
+
 }
 
-.aboutMeText {
-    width: 60%;
-    height: auto;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.myTitle h2 {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-size: 32px;
+    margin: 5px;
+}
 
+
+.Me1 {
+    grid-area: 1 / 1 / 4 / 3;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    margin-left: 45px;
+}
+.Me1 p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.Me2 {
+    grid-area: 4 / 1 / 5 / 3;
+    font-size: 18px;
+}
+
+.Me3 {
+    grid-area: 1 / 3 / 5 / 5;
+    width: 100%;
+    height: auto;
+    align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+
+.Me3 img{
+    width: 80%;
+    height: 80%;
 }
 
 .aboutMe {
     height: 50%;
     width: 100%;
-    background-color: rgb(12, 104, 73);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 20%;
+    background-color: #0d0d0d;
+    border-bottom: 4px solid #00ffff;
+    border-top: 4px solid #00ffff;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+
 }
 
 .contact {
@@ -118,63 +177,104 @@ header {
 
 }
 
-.experience{
+.experience {
+    background-color: #0d0d0d;
+    border-bottom: 4px solid #00ffff;
+    border-top: 4px solid #00ffff;
+    color: white;
     height: 90%;
     width: 100%;
-    background-color: rgb(14, 243, 167);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     gap: 15%;
-}
-
-.experience ul{
-    display: flex;
-    height: auto;
-    width: 70%;
-    list-style: none;
-    gap: 25px;
+    align-content: center;
     
-}
-
-.nameXp{
-    display: inline-block;
-    height: 35%;
-    height: 100%;
-
-}
-
-.description{
-    width: 80%;
-    text-align: justify;
-    height: auto;
-}
-
-
-.endPart{
-    height: 20%;
-    width: 100%;
-    display: block;
-    block-size: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
 }
 
-.endPart ul{
-    display: block;
-    
 
-}
-
-.endPart p{
+.experienceName1, .experienceName2, .experienceName3 {
     text-align: center;
-    
+    justify-content: center;
+    align-content: center;
+}
+.experienceData1, .experienceData2, .experienceData3{
+    padding: 5%;
+    text-align: start;
+    justify-content: center;
+    align-content: center;
+}
+.experienceImg1, .experienceImg2, .experienceImg3{
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.experienceName1 p, .experienceName2 p, .experienceName3 p{
+    border-right: 4px solid #00ffff;
+    height: 60%;
+    padding: 5%;
+    text-align: end;
+    align-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.experienceData1 p, .experienceData2 p, .experienceData3 p{
+    width: 90%;
+    height: auto;
+}
+
+.experienceName1{grid-area: 1 / 1 / 3 / 2;}
+.experienceName2{grid-area: 3 / 1 / 5 / 2;}
+.experienceName3{grid-area: 5 / 1 / 7 / 2;}
+
+.experienceData1{grid-area: 1 / 2 / 3 / 4;}
+.experienceData2{grid-area: 3 / 2 / 5 / 4;}
+.experienceData3{grid-area: 5 / 2 / 7 / 4;}
+
+.experienceImg1{grid-area: 1 / 4 / 3 / 5;}
+.experienceImg2{grid-area: 3 / 4 / 5 / 5; }
+.experienceImg3{grid-area: 5 / 4 / 7 / 5;}
+
+
+.endPart {
+    background-color: #0d0d0d;
+    border-bottom: 4px solid #00ffff;
+    border-top: 4px solid #00ffff;
+    color: white;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.endPart ul {
+    padding: 2%;
+}
+
+.endPart p {
+    text-align: center;
+    margin-bottom: 2px;
+    color: rgba(255, 255, 255, 0.452);
 }
 
 
 
-@media (width > 700px ){
-    .endPart{
-        background-color: blue;
+@media screen and (width < 400px) {
+    .endPart {}
+
+    .experience {}
+
+}
+
+@media(prefers-color-scheme: dark) {
+    #root {
+        --foreground-color: white;
+        --background-color: black;
     }
 }
