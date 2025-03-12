@@ -112,9 +112,6 @@ header.scrollAnimationHeader{
     font-family: 'Bungee';
     margin: 5px;
     color: #00ffff;
-    
-
-
 }
 
 .myTitle h2 {
@@ -165,7 +162,6 @@ header.scrollAnimationHeader{
 }
 
 .MeTitle{
-    padding: 2rem;
     grid-area: 1 / 1 / 2 / 5;
     width: 100%;
     height: 70%;
@@ -191,10 +187,38 @@ header.scrollAnimationHeader{
     grid-row-gap: 0px;
 }
 
-@media screen and(width < 400){
-    .MeTitle{
-        
+@media screen and (width < 400px){
+    .aboutMe{
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
     }
+    .MeTitle{
+        grid-area: 1 / 1 / 2 / 5;
+       
+    }
+    .Me1{
+        grid-area: 2 / 1 / 3 / 5;
+        margin: 20px;
+    }
+    .Me3{
+        
+        grid-area: 3 / 1 / 4 / 5;
+        height: 20%;
+    }
+    .Me2{
+        margin: 20px;
+        width: 90%;
+        grid-area: 4 / 1 / 5 / 5;
+    }
+
+    .mypage2, .mypage1{
+        gap: 2%;
+    }
+
+
+
 }
 
 .contact a{
@@ -207,13 +231,13 @@ header.scrollAnimationHeader{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
     align-items: center;
 }
 
 .mypage2, .mypage1{
     display: flex;
-    gap: 10px;
+    gap: 2%;
     align-content: center;
     align-items: center;
 
