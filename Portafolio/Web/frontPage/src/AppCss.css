@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
-    
+    background-color: #0d0d0d;
     height: 100vh;
-    
     font-family: Arial, sans-serif;
-    background-color: rgba(31, 29, 29, 0.692); 
 }
 
 #root {
@@ -20,6 +19,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    
 }
 
 .container {
@@ -31,13 +31,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: sRGB(0, 0, 0, 7);
     max-width: 100%;
     overflow: hidden;
     flex-wrap: wrap;
-
     position: fixed;
     width: 100%;
+
+    transition: 0.3s;
+
+}
+header.scrollAnimationHeader{
+    opacity: 0%;
+
 }
 
 
@@ -67,7 +72,7 @@ header {
 }
 
 .menuBar a{
-    color: #00ffff;;
+    color: #00ffff;
     text-decoration: none;
 }
 
@@ -80,8 +85,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    height: 50%;
+    gap: 5%;
+    height: 80%;
     margin-top: 50px;
 }
 
@@ -99,32 +104,33 @@ header {
     width: 35%;
     height: auto;
     object-fit: contain;
+    align-content: center;
 }
 
 .myTitle h1 {
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-size: clamp(3.5rem, 3.8vw, 4rem);
     font-family: 'Bungee';
-    font-size: 48px;
     margin: 5px;
     color: #00ffff;
+    
 
 
 }
 
 .myTitle h2 {
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
-    font-size: 32px;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     margin: 5px;
 }
 
 
 .Me1 {
-    grid-area: 1 / 1 / 4 / 3;
+    grid-area: 2 / 1 / 4 / 3;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 20px;
     margin-left: 45px;
+    height: 70%;
 }
 .Me1 p{
     text-align: justify;
@@ -134,12 +140,20 @@ header {
 .Me2 {
     grid-area: 4 / 1 / 5 / 3;
     font-size: 18px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.Me2 img{
+    width: 30px;
 }
 
 .Me3 {
-    grid-area: 1 / 3 / 5 / 5;
+    grid-area: 2 / 3 / 5 / 5;
     width: 100%;
-    height: auto;
+    height: 90%;
     align-items: center;
    text-align: center;
    justify-content: center;
@@ -150,22 +164,43 @@ header {
     height: 80%;
 }
 
+.MeTitle{
+    padding: 2rem;
+    grid-area: 1 / 1 / 2 / 5;
+    width: 100%;
+    height: 70%;
+    align-content: center;
+    text-align: center;
+    font-family: 'Bungee';
+    font-size: clamp(3rem, 2rem, 4rem);
+}
+
 .aboutMe {
-    height: 50%;
+    height: auto;
     width: 100%;
     align-items: center;
     background-color: #0d0d0d;
     border-bottom: 4px solid #00ffff;
     border-top: 4px solid #00ffff;
     color: white;
-
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
 
+@media screen and(width < 400){
+    .MeTitle{
+        
+    }
+}
 
+.contact a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 .contact {
@@ -173,7 +208,14 @@ header {
     display: flex;
     justify-content: center;
     gap: 10%;
+    align-items: center;
+}
 
+.mypage2, .mypage1{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
 
 }
 
@@ -182,7 +224,7 @@ header {
     border-bottom: 4px solid #00ffff;
     border-top: 4px solid #00ffff;
     color: white;
-    height: 90%;
+    height: auto;
     width: 100%;
     gap: 15%;
     align-content: center;
@@ -266,7 +308,13 @@ header {
 
 
 @media screen and (width < 400px) {
-    .endPart {}
+    .endPart {
+
+    }
+    .endPart p{
+        white-space: normal;
+
+    }
 
     .experience {}
 
@@ -277,4 +325,41 @@ header {
         --foreground-color: white;
         --background-color: black;
     }
+}
+
+html::-webkit-scrollbar{
+    width: var(--width, 10px);
+    background: #0d0d0d81;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:active{
+    background: #00ffff6b;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background: #00ffff8c;
+}
+html::-webkit-scrollbar-button:single-button:vertical:decrement{
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg' fill='white'><polygon points='50,0 0,50 100,50'/></svg>");
+    background-repeat: no-repeat;
+    background-position: 2px 5px;
+}
+html::-webkit-scrollbar-button:single-button:vertical:decrement:hover{
+    background-color: #00ffff;
+}
+html::-webkit-scrollbar-button:single-button:vertical:increment{
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg' fill='white'><polygon points='0,0 100,0 50,50'/></svg>");
+    background-repeat: no-repeat;
+    background-position: 2px 5px;
+}
+html::-webkit-scrollbar-button:single-button:vertical:increment:hover{
+    background-color: #00ffff;
+}
+
+html{
+    scroll-behavior: smooth;
 }

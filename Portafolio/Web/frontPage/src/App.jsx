@@ -3,6 +3,8 @@ import './AppCss.css'
 import "@fontsource/yeseva-one";
 import "@fontsource/bungee";
 
+
+
 function App() {
 
 
@@ -32,6 +34,9 @@ function App() {
         <img src="#" alt="#" />
       </div>
       <div className='aboutMe'>
+        <div className='MeTitle'>
+          Sobre mi
+        </div>
         <div className="Me1">
           <p className="aboutMeText">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -96,7 +101,7 @@ function App() {
           <li>Mis redes</li>
           <li>........</li>
         </ul>
-        <p>© Todos los derechos reservados | 2025</p>
+        <p>Copyright © 2025 GustavoWeb.All rights reserved and subject to the Privacy Policy and Terms and Conditions. </p>
       </div>
     </div>
   )

@@ -4,8 +4,14 @@ const MyInfo = () => {
     const GitHub = "gusworkout"
     return(
         <div className="contact">
-            <p>Linkendin: <a href="">{email}</a> </p>
-            <p>GitHub: <a href="">{GitHub}</a></p>
+            <div className="mypage1">
+             <img src="src/assets/linkedin48.svg"/>
+             <a href="">{email}</a>
+            </div>
+           <div className="mypage2"> 
+            <img src="src/assets/github48black.svg"/>
+            <a href="">{GitHub}</a> 
+            </div>
         </div>
     )
 }
