@@ -2,7 +2,7 @@ import MyInfo from './components/contactInfo'
 import './AppCss.css'
 import "@fontsource/yeseva-one";
 import "@fontsource/bungee";
-
+import './components/transition.js'
 
 
 function App() {
@@ -14,8 +14,6 @@ function App() {
         <div className="menuBar">
           <div className="miLogo">
             <img className="logoSvg" src="#" alt=" Gustavo Web" />
-
-
           </div>
           <ul>
             <li><a href="#">Sobre mi</a></li>
@@ -25,6 +23,20 @@ function App() {
           </ul>
         </div>
       </header>
+      <div id="slideBar" className='slideBarMobil'>
+      <div className="menuSlideBar">
+        Menú
+      </div>
+      <ul className='ulSlideBar'>
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Trayectoria</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Oscuro</a></li>
+          </ul>
+          <div className="logoSlideBar">
+            <img src="#" alt="GustavoWeb" />
+          </div>
+      </div>
       <div className="myTitle">
         <div className="nameAndSpec">
           <h1>Gustavo Ochoa</h1>
