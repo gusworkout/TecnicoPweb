@@ -5,6 +5,7 @@
 }
 
 
+
 body {
     display: flex;
     flex-direction: column;
@@ -22,27 +23,15 @@ body {
     
 }
 
-.container {
-    height: 100%;
+
+
+.scrollActivo{
+    height: 0;
 }
 
-header {
-    height: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    overflow: hidden;
-    flex-wrap: wrap;
-    position: fixed;
-    width: 100%;
 
-    transition: 0.3s;
-
-}
-header.scrollAnimationHeader{
-    opacity: 0%;
-
+.ulSlideBar, .logoSlideBar, .slideBarMobil, .menuSlideBar{
+    display: none;
 }
 
 
@@ -57,8 +46,11 @@ header.scrollAnimationHeader{
 
 .miLogo {
     color: white;
+    font-family: 'bungee';
     width: 40%;
     display: flex;
+    align-items: center;
+    gap: 0.5em;
     justify-content: flex-start;
 }
 
@@ -76,21 +68,86 @@ header.scrollAnimationHeader{
     text-decoration: none;
 }
 
+header {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+
+}
+
 .myTitle {
     width: 100%;
     background-color: #0d0d0d;
-    border-bottom: 4px solid #00ffff;
-    border-top: 4px solid #00ffff;
+    border-bottom: 4px solid #00ffff26;
+    border-top: 4px solid #00ffff26;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
-    height: 80%;
+    height: auto;
     margin-top: 50px;
+    margin-bottom: 5em;
+}
+
+.experience {
+    background-color: #0d0d0d;
+    border-bottom: 4px solid #00ffff26;
+    border-top: 4px solid #00ffff26;
+    color: white;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+}
+.aboutMe {
+    height: auto;
+    width: 100%;
+    align-items: center;
+    background-color: #0d0d0d;
+    border-bottom: 4px solid #00ffff26;
+    border-top: 4px solid #00ffff26;
+    color: white;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    transition: 1s;
 }
 
 
+.endPart {
+    background-color: #0d0d0d;
+    border-top: 4px solid #00ffff26;
+    color: white;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5em;
+    gap: 10%;
+}
 
 .nameAndSpec {
     padding: 1em;
@@ -101,7 +158,7 @@ header.scrollAnimationHeader{
 
 .myTitle img {
     padding: 1em;
-    width: 35%;
+    width: 50%;
     height: auto;
     object-fit: contain;
     align-content: center;
@@ -161,130 +218,23 @@ header.scrollAnimationHeader{
     height: 80%;
 }
 
+
+.slide{
+    display: none;
+}
+
 .MeTitle{
     grid-area: 1 / 1 / 2 / 5;
     width: 100%;
-    height: 70%;
+    height: auto;
     align-content: center;
-    text-align: center;
+    text-align: center;;
     font-family: 'Bungee';
     font-size: clamp(3rem, 2rem, 4rem);
 }
 
-.aboutMe {
-    height: auto;
-    width: 100%;
-    align-items: center;
-    background-color: #0d0d0d;
-    border-bottom: 4px solid #00ffff;
-    border-top: 4px solid #00ffff;
-    color: white;
-    
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    transition: 1s;
-}
-
-.slideBarMobil{
-    opacity: 0;
-}
-
-@media screen and (width < 450px){
-    header a{
-        opacity: 0;
-        pointer-events: none;
-        cursor: default;
-    }
-    
-    .slideBarMobil{
-        opacity: 100;
-        background-color: antiquewhite;
-        margin-top: 0;
-        margin-left: 0;
-        position: fixed;
-        height: 100vh;
-        width: 12em;
-
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .menuSlideBar{
-        background-color: #00ffff;
-    }
-    .menuSlideBar{
-        text-align: center;
-        font-size: clamp(1.5rem, 1rem, 1.9rem);
-        padding: 2rem;
-         height: 10%;
-         font-family: 'bungee';
-    }
-    .ulSlideBar{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 3em;
-        height: 70%;
-        list-style: none;
-    }
-    .ulSlideBar a{
-        font-weight: bold;
-        font-size: 20px;
-        text-decoration: none;
-        color: black;
-    }
-    .logoSlideBar{
-        font-family: 'Bungee';
-        font-weight: bold;
-        text-align: center;
-        height: 10%;
-        bottom: 0;
-    }
 
 
-
-
-    .aboutMe{
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        justify-content: center;
-    }
-    .MeTitle{
-        grid-area: 1 / 1 / 2 / 5;
-       
-    }
-    .Me1{
-        grid-area: 2 / 1 / 3 / 5;
-        margin: 20px;
-    }
-    .Me3{
-        
-        grid-area: 3 / 1 / 5 / 5;
-        height: 80%;
-        z-index: 1;
-
-    }
-    .Me2{
-        margin: 20px;
-        width: 90%;
-        grid-area: 4 / 1 / 5 / 5;
-    }
-
-    .contact {
-        opacity: 0;
-        position: absolute;
-        z-index: 0;
-    }
-    
-
-
-
-}
 
 .contact a{
     text-decoration: none;
@@ -309,50 +259,53 @@ header.scrollAnimationHeader{
 
 }
 
-.experience {
-    background-color: #0d0d0d;
-    border-bottom: 4px solid #00ffff;
-    border-top: 4px solid #00ffff;
-    color: white;
-    height: auto;
-    width: 100%;
-    gap: 15%;
-    align-content: center;
-    
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-}
-
 
 .experienceName1, .experienceName2, .experienceName3 {
+    display: flex;
+    width: 70%;
+    align-items: center;
     text-align: center;
     justify-content: center;
     align-content: center;
+
 }
 .experienceData1, .experienceData2, .experienceData3{
-    padding: 5%;
+    padding: 2%;
+    display: flex;
     text-align: start;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    border-left: 4px solid #00ffff;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 .experienceImg1, .experienceImg2, .experienceImg3{
     padding: 5%;
     text-align: center;
     justify-content: center;
     align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+.experience img{
+    height: 100%;
+    width: 100%;
+}
+
 .experienceName1 p, .experienceName2 p, .experienceName3 p{
-    border-right: 4px solid #00ffff;
+    display: flex;
     height: 60%;
     padding: 5%;
-    text-align: end;
+    align-items: center;
     align-content: center;
+    justify-content: end;
     font-size: 20px;
     font-weight: bold;
+    width: 100%;
 }
 
 .experienceData1 p, .experienceData2 p, .experienceData3 p{
@@ -373,53 +326,36 @@ header.scrollAnimationHeader{
 .experienceImg3{grid-area: 5 / 4 / 7 / 5;}
 
 
-.endPart {
-    background-color: #0d0d0d;
-    border-bottom: 4px solid #00ffff;
-    border-top: 4px solid #00ffff;
-    color: white;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-}
 
 .endPart ul {
+    color: rgba(255, 255, 255, 0.305);
+    display: flex;
+    justify-content: center;
+    gap: 5em;
     padding: 2%;
+    list-style: none;
+    
+}
+.endPart a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.382);
+}
+.endPart li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .endPart p {
+    
     text-align: center;
     margin-bottom: 2px;
-    color: rgba(255, 255, 255, 0.452);
-}
-
-
-
-@media screen and (width < 450px) {
-    .endPart {
-
-    }
-    .endPart p{
-        white-space: normal;
-
-    }
-
-    .experience {}
-
-}
-
-@media(prefers-color-scheme: dark) {
-    #root {
-        --foreground-color: white;
-        --background-color: black;
-    }
+    color: rgba(255, 255, 255, 0.201);
 }
 
 html::-webkit-scrollbar{
     width: var(--width, 10px);
-    background: #0d0d0d81;
+    background: #353333be;
 }
 
 html::-webkit-scrollbar-thumb {

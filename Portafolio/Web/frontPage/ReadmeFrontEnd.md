@@ -155,4 +155,39 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("prueba", this.window.scrollY>0)
 })
 
+## NOTA 
+## NO SE PUEDE UTILIZAR AddEvent CON REACT
 
+## RECOMENDACION UTILZIAR useRef o useState
+
+se crean las variables para activar o desactivar 
+
+const [activarNombre, desactivarNombre] = useState(false)
+
+
+en el elemento que se quiere mostrar o ocultar se llama
+
+< nameClass={`Barra${ActivarNombre ? "DesactivarNombre":""`}>
+
+en el elemento que se pulsa
+
+<onClick={()=>DesactivarNombre (!activarNombre)}>
+
+
+## UN EVENTO EN TODA LA PAGINA COMO BAJAR
+useEffect(() => {
+    const handleScroll = () => {
+
+      if (window.scrollY > 2) {
+        setScrollAnimationHeader(true)
+      } else {
+        setScrollAnimationHeader(false)
+      }
+    }
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+
+  }, [])
